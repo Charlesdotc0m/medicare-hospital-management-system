@@ -1,0 +1,62 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Doctor Banner -->
+
+<section class="bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1 class="fw-bold">Our Doctors</h1>
+        <p>Meet our experienced and dedicated medical professionals.</p>
+    </div>
+</section>
+
+<!-- Doctors Section -->
+<section class="container my-5">
+
+    <div class="row g-4">
+
+        {% for doctor in doctors %}
+
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+
+                <img src="{{ doctor.doctor_image.url }}"
+                     class="card-img-top"
+                     height="320"
+                     style="object-fit: cover;">
+
+                <div class="card-body text-center">
+
+                    <h4>{{ doctor.doctor_name }}</h4>
+
+                    <p class="text-primary">
+                        {{ doctor.doctor_specialization }}
+                    </p>
+
+                    <p>
+                        Department :
+                        {{ doctor.department_name.department_name }}
+                    </p>
+
+                    <a href="{% url 'appointments' %}" class="btn btn-primary">
+                        Book Appointment
+                    </a>
+
+                </div>
+            </div>
+        </div>
+
+        {% empty %}
+
+        <div class="col-12 text-center">
+            <h4>No Doctors Available</h4>
+        </div>
+
+        {% endfor %}
+
+    </div>
+
+</section>
+{% endblock %}

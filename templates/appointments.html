@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Appointment Banner -->
+
+<section class="bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1 class="fw-bold">Book an Appointment</h1>
+        <p>Schedule your consultation with our experienced doctors.</p>
+    </div>
+</section>
+
+<!-- Appointment Form -->
+
+<section class="container my-5">
+
+    <div class="row justify-content-center">
+
+        <div class="col-md-8">
+
+            <div class="card shadow p-4">
+
+                <h3 class="text-center text-primary mb-4">
+                    Appointment Form
+                </h3>
+
+                <form method="POST">
+                    {% csrf_token %}
+
+                    <div class="mb-3">
+                        <label class="form-label">Patient Name</label>
+                        {{ form.patient_name }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Select Doctor</label>
+                        {{ form.doctor_name }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Appointment Date</label>
+                        {{ form.appointment_date }}
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Appointment Time</label>
+                        {{ form.appointment_time }}
+                    </div>
+
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary px-5">
+                            Book Appointment
+                        </button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

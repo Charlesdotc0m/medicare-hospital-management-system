@@ -1,0 +1,91 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Department Banner -->
+
+<section class="bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1 class="fw-bold">Our Departments</h1>
+        <p>Providing specialized healthcare services with experienced medical professionals.</p>
+    </div>
+</section>
+
+<!-- Departments -->
+
+<section class="container my-5">
+
+    <div class="row g-4">
+
+        <!-- Cardiology -->
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+                <img src="{% static 'images/cardiology.jpg' %}" class="card-img-top" height="250">
+                <div class="card-body text-center">
+                    <h4 class="text-primary">Cardiology</h4>
+                    <p>Diagnosis and treatment for heart-related diseases with advanced medical care.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Neurology -->
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+                <img src="{% static 'images/neurology.jpg' %}" class="card-img-top" height="250">
+                <div class="card-body text-center">
+                    <h4 class="text-primary">Neurology</h4>
+                    <p>Expert treatment for brain, spinal cord, and nervous system disorders.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Orthopedics -->
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+                <img src="{% static 'images/orthopedics.jpg' %}" class="card-img-top" height="250">
+                <div class="card-body text-center">
+                    <h4 class="text-primary">Orthopedics</h4>
+                    <p>Specialized treatment for bones, joints, muscles, and sports injuries.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pediatrics -->
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+                <img src="{% static 'images/pediatrics.jpg' %}" class="card-img-top" height="250">
+                <div class="card-body text-center">
+                    <h4 class="text-primary">Pediatrics</h4>
+                    <p>Complete healthcare services for infants, children, and adolescents.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- ENT -->
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+                <img src="{% static 'images/ent.jpg' %}" class="card-img-top" height="250">
+                <div class="card-body text-center">
+                    <h4 class="text-primary">ENT</h4>
+                    <p>Comprehensive treatment for ear, nose, throat, head, and neck conditions.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Emergency -->
+        <div class="col-md-4">
+            <div class="card shadow h-100">
+                <img src="{% static 'images/emergency.jpg' %}" class="card-img-top" height="250">
+                <div class="card-body text-center">
+                    <h4 class="text-primary">Emergency Care</h4>
+                    <p>24×7 emergency services with highly trained doctors and modern equipment.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}

@@ -1,0 +1,105 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+<!-- Contact Banner -->
+
+<section class="bg-primary text-white text-center py-5">
+    <div class="container">
+        <h1 class="fw-bold">Contact Us</h1>
+        <p>We're here to help you 24×7.</p>
+    </div>
+</section>
+
+<!-- Contact Details -->
+
+<section class="container my-5">
+
+    <div class="row">
+
+        <!-- Contact Information -->
+
+        <div class="col-md-6">
+
+            <div class="card shadow p-4">
+
+                <h3 class="text-primary mb-4">Hospital Information</h3>
+
+                <p><strong>🏥 Hospital :</strong> MediCare Hospital</p>
+
+                <p><strong>📍 Address :</strong> 123 Health Street, Chennai, Tamil Nadu</p>
+
+                <p><strong>📞 Phone :</strong> +91 98765 43210</p>
+
+                <p><strong>📧 Email :</strong> medicarehospital@gmail.com</p>
+
+                <p><strong>🕒 Working Hours :</strong> 24 × 7</p>
+
+            </div>
+
+        </div>
+
+        <!-- Contact Form -->
+
+        <div class="col-md-6">
+
+            <div class="card shadow p-4">
+
+                <h3 class="text-primary mb-4">Send a Message</h3>
+
+                <form>
+
+                    <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input type="text" class="form-control" placeholder="Enter your name">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input type="email" class="form-control" placeholder="Enter your email">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Subject</label>
+                        <input type="text" class="form-control" placeholder="Enter subject">
+                    </div>
+
+                    <div class="mb-3">
+                        <label class="form-label">Message</label>
+                        <textarea class="form-control" rows="5" placeholder="Type your message"></textarea>
+                    </div>
+
+                    <button class="btn btn-primary w-100">
+                        Send Message
+                    </button>
+
+                </form>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Google Map -->
+
+<section class="container mb-5">
+
+    <div class="card shadow p-2">
+
+        <iframe
+            src="https://www.google.com/maps?q=Chennai&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            allowfullscreen=""
+            loading="lazy">
+        </iframe>
+
+    </div>
+
+</section>
+
+{% endblock %}

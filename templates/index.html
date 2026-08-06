@@ -1,0 +1,140 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- Carousel Start -->
+
+<div id="hospitalCarousel" class="carousel slide" data-bs-ride="carousel">
+
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#hospitalCarousel" data-bs-slide-to="0" class="active"></button>
+        <button type="button" data-bs-target="#hospitalCarousel" data-bs-slide-to="1"></button>
+        <button type="button" data-bs-target="#hospitalCarousel" data-bs-slide-to="2"></button>
+    </div>
+
+    <div class="carousel-inner">
+
+        <div class="carousel-item active">
+            <img src="{% static 'images/banner1.jpg' %}" class="d-block w-100" height="600" alt="Banner 1">
+        </div>
+
+        <div class="carousel-item">
+            <img src="{% static 'images/banner2.jpg' %}" class="d-block w-100" height="600" alt="Banner 2">
+        </div>
+
+        <div class="carousel-item">
+            <img src="{% static 'images/banner3.jpg' %}" class="d-block w-100" height="600" alt="Banner 3">
+        </div>
+
+    </div>
+
+    <button class="carousel-control-prev" type="button" data-bs-target="#hospitalCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+    </button>
+
+    <button class="carousel-control-next" type="button" data-bs-target="#hospitalCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon"></span>
+    </button>
+
+</div>
+
+<!-- Carousel End -->
+<!-- Welcome Section Start -->
+
+<section class="container my-5">
+
+    <div class="row align-items-center">
+
+        <div class="col-md-6">
+            <h2 class="fw-bold text-primary">
+                Welcome to MediCare
+            </h2>
+
+            <p class="mt-3">
+                MediCare Hospital is committed to providing high-quality healthcare
+                services with experienced doctors, advanced medical technology,
+                and compassionate patient care.
+            </p>
+
+            <a href="{% url 'appointments' %}" class="btn btn-primary">
+                Book Appointment
+            </a>
+        </div>
+
+        <div class="col-md-6 text-center">
+            <img src="{% static 'images/doctor.jpg' %}"
+                 class="img-fluid rounded shadow"
+                 alt="Doctor">
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Welcome Section End -->
+<!-- Our Departments Start -->
+
+<section class="container my-5">
+
+    <div class="text-center mb-5">
+        <h2 class="fw-bold text-primary">Our Departments</h2>
+        <p>We provide quality healthcare services across multiple specialties.</p>
+    </div>
+
+    <div class="row">
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow text-center h-100">
+                <div class="card-body">
+                    <h4>❤️ Cardiology</h4>
+                    <p>Expert care for heart-related diseases and treatments.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow text-center h-100">
+                <div class="card-body">
+                    <h4>🧠 Neurology</h4>
+                    <p>Advanced diagnosis and treatment for neurological disorders.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 mb-4">
+            <div class="card shadow text-center h-100">
+                <div class="card-body">
+                    <h4>🦴 Orthopedics</h4>
+                    <p>Comprehensive bone and joint care with experienced specialists.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Our Departments End -->
+<!-- Emergency Contact Start -->
+
+<section class="py-5 rounded-4"
+style="background:linear-gradient(90deg,#0d6efd,#20c997); color:white;">
+    <div class="container text-center">
+
+        <h2>24 × 7 Emergency Services</h2>
+
+        <p class="mt-3">
+            We are available round the clock for emergency medical services.
+        </p>
+
+        <h3>📞 +91 98765 43210</h3>
+
+        <p>Email : medicarehospital@gmail.com</p>
+
+    </div>
+
+</section>
+
+<!-- Emergency Contact End -->
+{% endblock %}

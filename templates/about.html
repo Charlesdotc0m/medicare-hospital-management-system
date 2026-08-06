@@ -1,0 +1,130 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+<!-- About Section -->
+
+<section class="container my-5">
+
+    <div class="text-center mb-5">
+        <h1 class="text-primary fw-bold">About MediCare Hospital</h1>
+        <p class="lead">
+            Caring for Life, Every Step of the Way.
+        </p>
+    </div>
+
+    <div class="row align-items-center">
+
+        <div class="col-md-6">
+            <img src="{% static 'images/about.jpg' %}"
+                 class="img-fluid rounded shadow"
+                 alt="Hospital">
+        </div>
+
+        <div class="col-md-6">
+
+            <h3 class="text-primary">Our History</h3>
+
+            <p>
+                MediCare Hospital has been providing quality healthcare services
+                with experienced doctors, modern technology, and compassionate
+                patient care. We are dedicated to improving the health and
+                well-being of our community.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Mission & Vision -->
+
+<section class="container my-5">
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+            <div class="card shadow p-4">
+
+                <h3 class="text-success">Our Mission</h3>
+
+                <p>
+                    To provide affordable, accessible, and high-quality
+                    healthcare services while ensuring patient satisfaction
+                    and safety.
+                </p>
+
+            </div>
+
+        </div>
+
+        <div class="col-md-6">
+
+            <div class="card shadow p-4">
+
+                <h3 class="text-primary">Our Vision</h3>
+
+                <p>
+                    To become one of the most trusted healthcare institutions
+                    by delivering world-class medical services and innovative
+                    healthcare solutions.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- Facilities -->
+
+<section class="container my-5">
+
+    <div class="text-center mb-4">
+
+        <h2 class="text-primary fw-bold">
+            Our Facilities
+        </h2>
+
+    </div>
+
+    <div class="row text-center">
+
+        <div class="col-md-3">
+            <div class="card shadow p-3">
+                🏥
+                <h5 class="mt-2">Modern Infrastructure</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow p-3">
+                👨‍⚕️
+                <h5 class="mt-2">Expert Doctors</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow p-3">
+                🚑
+                <h5 class="mt-2">24×7 Emergency</h5>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="card shadow p-3">
+                💊
+                <h5 class="mt-2">Advanced Pharmacy</h5>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+{% endblock %}
